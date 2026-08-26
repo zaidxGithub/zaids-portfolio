@@ -1,14 +1,13 @@
 import React from 'react'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
+import Hero from './components/sections/Hero'
 const App = () => {
   return (
    <>
    <Navbar/>
    <main>
-    <h1>
-      Mohammad Zaid 
-    </h1>
+   <Hero/>
    </main>
  <Footer/>
     

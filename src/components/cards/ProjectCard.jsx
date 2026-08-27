@@ -1,10 +1,15 @@
-export default function ProjectCard({ project }) {
-  return (
-    <article>
-      <h3>{project.title}</h3>
-       <p>{project.description}</p>
+import { projects } from "../../data/portfolioData";
+import ProjectCard from "../cards/ProjectCard";
 
-      <p>{project.techStack.join(" • ")}</p>
-    </article>
+export default function Projects() {
+  return (
+    <section>
+      {projects.map((project) => (
+        <ProjectCard
+          key={project.id}
+          project={project}
+        />
+      ))}
+    </section>
   );
 }

@@ -1,0 +1,20 @@
+[1mdiff --git a/src/App.jsx b/src/App.jsx[m
+[1mindex 3305ff2..1121422 100644[m
+[1m--- a/src/App.jsx[m
+[1m+++ b/src/App.jsx[m
+[36m@@ -2,12 +2,15 @@[m [mimport React from 'react'[m
+ import Navbar from './components/layout/Navbar'[m
+ import Footer from './components/layout/Footer'[m
+ import Hero from './components/sections/Hero'[m
+[32m+[m[32mimport Projects from './components/sections/Projects'[m
+[32m+[m
+ const App = () => {[m
+   return ([m
+    <>[m
+    <Navbar/>[m
+    <main>[m
+    <Hero/>[m
+[32m+[m[32m   <Projects/>[m
+    </main>[m
+  <Footer/>[m
+     [m

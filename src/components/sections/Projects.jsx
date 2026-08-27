@@ -1,5 +1,5 @@
-import { projects } from "../../data/portfolioData";
-import ProjectCard from "../cards/ProjectCard";
+import { projects } from "../../../data/portfolioData";
+import ProjectCard from "../ProjectCard";
 
 export default function Projects() {
   return (

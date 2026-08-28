@@ -1,6 +1,6 @@
 import { projects } from "../../data/portfolioData";
-import ProjectCard from "../cards/ProjectCard";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 
 export default function ProjectCard({ project }) {
   return (
@@ -47,7 +47,7 @@ export default function ProjectCard({ project }) {
             className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-sm"
           >
             GitHub
-            <Github size={14} />
+            <FaGithub size={14} />
           </a>
         </div>
       </div>

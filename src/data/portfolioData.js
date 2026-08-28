@@ -1,4 +1,4 @@
-import { projects } from "./projects";
+import { projects } from "./project";
 import { certifications } from "./certifications";
 import { achievements } from "./achievements";
 import { skills } from "./skills";

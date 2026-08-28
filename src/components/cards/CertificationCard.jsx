@@ -1,6 +1,7 @@
 
 import { ExternalLink } from "lucide-react";
 export default function CertificationCard({ certification }) {
+  const c=certification;
   return (
      <article className="glass glass-hover overflow-hidden rounded-[2rem]">
       <div className="p-2">

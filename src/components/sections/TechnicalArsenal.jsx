@@ -1,5 +1,5 @@
 import {skills} from "../../data/portfolioData";
-import skillCard from "../cards/SkillCard";
+import SkillCard from "../cards/SkillCard";
 
 //THIS IS TECH ARSENAL SECTION 
 export default function TechnicalArsenal() {

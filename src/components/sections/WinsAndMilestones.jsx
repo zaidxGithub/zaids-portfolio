@@ -1,5 +1,5 @@
 import { achievements } from "../../data/achievements";
-import winCard from "../cards/WinCard"
+import WinCard from "../cards/WinCard"
 
 export default function WinsAndMilestones() {
   return (

@@ -1,37 +1,37 @@
-import React from 'react'
-import Navbar from './components/layout/Navbar'
-import Footer from './components/layout/Footer'
-import Hero from "./components/sections/Hero"
-import Projects from './components/sections/Projects'
-import TechnicalArsenal from './components/sections/TechnicalArsenal'
-import HowIBuild from './components/sections/HowIBuild'
-import WhereIHaveWorked from './components/sections/WhereIHaveWorked'
-import WinsAndMilestones from './components/sections/WinsAndMilestones'
-import CertificationCard from './components/cards/CertificationCard'
-import Certifications from './components/sections/Certifications'
-import Contact from './components/sections/Contact'
-import Foundation from "./components/sections/Foundation"
+import { useEffect, useState } from "react";
+import Loader from "./components/layout/Loader";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+import HeroSection from "./components/sections/HeroSection";
+import MarqueeSection from "./components/sections/MarqueeSection";
+import AboutSection from "./components/sections/AboutSection";
 
-const App = () => {
-  return (
-   <>
-   <Navbar/>
-   <main>
-    <Hero/>
-   <TechnicalArsenal/>
-   <HowIBuild/>
-   <WhereIHaveWorked/>
-   <Projects/>
-   <WinsAndMilestones/>
-   <Certifications/>
-   <Foundation/>
-   <Contact/> 
-   
-   </main>
- <Footer/>
-    
-   </>
-  )
+export default function App() {
+  const [theme, setTheme] = useState(() => localStorage.getItem("zaid-theme") || "dark");
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    localStorage.setItem("zaid-theme", theme);
+    document.documentElement.classList.toggle("light-mode", theme === "light");
+  }, [theme]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 1250);
+    return () => clearTimeout(timer);
+  }, []);
+
+  return <>
+    {loading && <Loader />}
+    <div className={`noise relative overflow-hidden ${theme === "light" ? "light-mode" : ""}`}>
+      <div className="grid-bg pointer-events-none absolute inset-x-0 top-0 h-[800px]" />
+      <Navbar theme={theme} setTheme={setTheme} />
+      <main>
+        <HeroSection />
+        <MarqueeSection />
+        <AboutSection />
+       
+      </main>
+      <Footer />
+    </div>
+  </>;
 }
-
-export default App

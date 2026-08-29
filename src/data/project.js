@@ -14,7 +14,7 @@ export const projects = [
     ],
     liveUrl: "https://smartvault-omega.vercel.app/",
     githubUrl: "https://github.com/zaidxGithub/SmartVault",
-    image: "",
+    image: "../../public/project/smartvault-dashboard.png",
     date: "Oct. 2025 – Dec. 2025",
   },
 
@@ -32,7 +32,7 @@ export const projects = [
     ],
     liveUrl: "https://easy-page-blue.vercel.app/",
     githubUrl: "https://github.com/zaidxGithub/EasyPage",
-    image: "",
+    image: "../../public/project/easypage.png",
     date: "Jun. 2025 – Jul. 2025",
   },
 ];

@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Github } from "lucide-react";
+// import { Github } from "lucide-react";
 import ExternalButton from "../ui/ExternalButton";
+import { FaGithub } from "react-icons/fa";
 
 export default function ProjectCard({ project: p, index }) {
   const [flipped, setFlipped] = useState(false);
@@ -33,7 +34,7 @@ export default function ProjectCard({ project: p, index }) {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  GitHub <Github size={16} />
+                  GitHub <FaGithub size={16} />
                 </a>
               </div>
             </div>
@@ -109,7 +110,7 @@ export default function ProjectCard({ project: p, index }) {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      GitHub <Github size={16} />
+                      GitHub <FaGithub size={16} />
                     </a>
                   </div>
                 </div>

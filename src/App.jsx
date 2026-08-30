@@ -5,6 +5,10 @@ import Footer from "./components/layout/Footer";
 import HeroSection from "./components/sections/HeroSection";
 import MarqueeSection from "./components/sections/MarqueeSection";
 import AboutSection from "./components/sections/AboutSection";
+import EducationSection from "./components/sections/EducationSection";
+import ProcessSection from "./components/sections/ProcessSection";
+import HelpSection from "./components/sections/HelpSection";
+import ProjectsSection from "./components/sections/ProjectsSection";
 
 export default function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem("zaid-theme") || "dark");
@@ -29,6 +33,11 @@ export default function App() {
         <HeroSection />
         <MarqueeSection />
         <AboutSection />
+        <EducationSection/>
+        <ProcessSection />
+         <HelpSection />
+           <ProjectsSection />
+        
        
       </main>
       <Footer />

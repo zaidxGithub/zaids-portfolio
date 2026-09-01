@@ -14,6 +14,7 @@ import ExperienceSection from "./components/sections/ExperienceSection";
 import ContributionsSection from "./components/sections/ContributionsSection";
 import WinsSection from "./components/sections/WinsSection";
 import ContactSection from "./components/sections/ContactSection";
+import QuickAnswerSection from "./components/sections/QuickAnswersSection"
 
 export default function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem("zaid-theme") || "dark");
@@ -46,6 +47,7 @@ export default function App() {
            <ExperienceSection/>
            <ContributionsSection/>
            <WinsSection/>
+           <QuickAnswerSection/>
            <ContactSection/>
         
 

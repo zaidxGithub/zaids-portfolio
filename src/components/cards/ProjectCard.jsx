@@ -6,6 +6,8 @@ import { FaGithub } from "react-icons/fa";
 export default function ProjectCard({ project: p, index }) {
   const [flipped, setFlipped] = useState(false);
   const image = p.screenshots?.[0];
+  // ("Imaage Url :",image);
+  // console.log("image url -->",image);
 
   return (
     <article
@@ -84,6 +86,7 @@ export default function ProjectCard({ project: p, index }) {
                   src={image}
                   alt={`${p.title} project screenshot`}
                   className="project-preview-image"
+                  // className="w-full h-full object-cover"
                 />
               )}
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black via-black/75 to-transparent p-7 sm:p-10">

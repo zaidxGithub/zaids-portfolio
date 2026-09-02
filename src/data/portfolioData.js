@@ -28,7 +28,7 @@ export const projects = [
     stack: ["React.js", "Node.js", "Express.js", "MongoDB", "Firebase", "Gemini API"],
     live: "https://smartvault-omega.vercel.app/",
     github: "https://github.com/zaidxGithub/SmartVault",
-    screenshots: ["/projects/smartvault-dashboard.png", "/projects/smartvault-login.png"],
+    screenshots: ["/project/smartvault-dashboard.png", "/project/smartvault-login.png"],
   },
   {
     number: "02",
@@ -39,7 +39,7 @@ export const projects = [
     stack: ["React.js", "JavaScript", "Tailwind CSS", "html2canvas", "jsPDF"],
     live: "https://easy-page-blue.vercel.app/",
     github: "https://github.com/zaidxGithub/EasyPage",
-    screenshots: ["/projects/easypage.png"],
+    screenshots: ["/project/easypage.png"],
   },
 ];
 

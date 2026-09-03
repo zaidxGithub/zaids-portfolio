@@ -5,19 +5,15 @@ import { certifications, wins } from "../../data/portfolioData";
 
 export default function WinsSection() {
   return (
-    <section id="wins" className="container-x py-28">
+    <section id="wins" className="container-x py-8">
       <SectionHeader
         eyebrow="Wins & certifications"
         title="Proof of"
         accent="progress."
         description="Selected achievements and the four certificates you supplied for this portfolio."
       />
-      <div className="grid gap-5 lg:grid-cols-3">
-        {wins.map((win) => (
-          <WinCard key={win.title} win={win} />
-        ))}
-      </div>
-      <div className="mt-5 grid gap-5 lg:grid-cols-3">
+
+      <div className="mt-5 grid gap-5 lg:grid-cols-4">
         {certifications.map((certification) => (
           <CertificationCard
             key={certification.title}

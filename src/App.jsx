@@ -36,23 +36,43 @@ export default function App() {
       <div className="grid-bg pointer-events-none absolute inset-x-0 top-0 h-[800px]" />
       <Navbar theme={theme} setTheme={setTheme} />
       <main>
+        {/* //1 */}
         <HeroSection />
+        {/* //2 */}
         <MarqueeSection />
+        {/* //3 */}
         <AboutSection />
-        <EducationSection/>
-        <ProcessSection />
-         <HelpSection />
-           <ProjectsSection />
+        {/* //4 */}
            <SkillsSection/>
-           <ExperienceSection/>
-           <ContributionsSection/>
-           <WinsSection/>
-           <QuickAnswerSection/>
-           <ContactSection/>
-        
+            {/* //5 */}
+             <ProcessSection />
 
-        
-       
+
+             <ExperienceSection/>
+                {/* //6 */}
+              <ProjectsSection />
+
+             {/* //8 */}
+           <ContributionsSection/>
+           {/* //9 */}
+           <WinsSection/>
+           {/* //10 */}
+
+        <EducationSection/>
+        {/* //11 */}
+
+         <HelpSection />
+         {/* //12 */}
+
+
+
+           {/* <QuickAnswerSection/> */}
+           {/* //13 */}
+           <ContactSection/>
+
+
+
+
       </main>
       <Footer />
     </div>

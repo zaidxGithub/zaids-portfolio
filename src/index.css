@@ -90,14 +90,39 @@ body {
     @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/[0.02] px-5 py-3 text-sm font-bold text-white transition hover:border-red-500/50 hover:bg-red-500/10;
   }
 }
-
+/*
 .grid-bg {
   background-image:
     linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);
   background-size: 56px 56px;
   mask-image: linear-gradient(to bottom, black 20%, transparent 100%);
+} */
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);
+
+  background-size: 56px 56px;
+
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 20%,
+    black 80%,
+    transparent 100%
+  );
+
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 20%,
+    black 80%,
+    transparent 100%
+  );
 }
+
 
 .noise::before {
   content: "";
@@ -451,4 +476,14 @@ html.light-mode .process-card { background: rgba(255,255,255,.65); }
   .project-flip-inner {
     transition: none;
   }
+}
+
+.hero-info-card {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.light-mode .hero-info-card {
+  border-color: rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.65);
 }

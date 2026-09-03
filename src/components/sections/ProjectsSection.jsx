@@ -4,6 +4,15 @@ import { projects } from "../../data/portfolioData";
 
 export default function ProjectsSection() {
   return (
+
+
+
+    <section className="relative overflow-hidden">
+  <div className="grid-bg pointer-events-none absolute inset-0" />
+
+  <div className="relative">
+    {/* section content */}
+
     <section id="projects" className="container-x py-28">
       <SectionHeader
         eyebrow="Things I've shipped"
@@ -17,5 +26,13 @@ export default function ProjectsSection() {
         ))}
       </div>
     </section>
+
+
+  </div>
+</section>
+
+
+
+
   );
 }

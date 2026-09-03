@@ -5,7 +5,7 @@ export default function CertificationCard({ certification }) {
   return (
      <article className="glass glass-hover overflow-hidden rounded-[2rem]">
       <div className="p-2">
-        <div className="certificate-image-wrap aspect-[16/10] w-full overflow-hidden rounded-[1.5rem]">
+        <div className="certificate-image-wrap aspect-[16/8] w-full overflow-hidden rounded-[1.5rem]">
           <img
             src={c.image}
             alt={c.alt}
@@ -40,6 +40,6 @@ export default function CertificationCard({ certification }) {
         </a>
       </div>
     </article>
-   
+
   );
 }

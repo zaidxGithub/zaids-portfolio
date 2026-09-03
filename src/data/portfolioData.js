@@ -12,10 +12,10 @@ export const navItems = [
 
 export const skills = {
   Languages: ["C++", "JavaScript", "Python", "SQL"],
-  Frontend: ["React.js", "Tailwind CSS"],
-  Backend: ["Node.js", "Express.js"],
+  Frameworks: ["React.js", "Node.js", "Express.js","Tailwind CSS"],
   Databases: ["MongoDB", "MySQL"],
   Tools: ["Git", "GitHub", "VS Code", "Postman", "Firebase", "Docker", "Cloudinary"],
+
 };
 
 export const projects = [
@@ -73,27 +73,36 @@ export const wins = [
 ];
 
 export const certifications = [
-  // {
-  //   issuer: "GirlScript Foundation",
-  //   title: "GSSoC 2025 — Tech Contributor",
-  //   result: "Contributor program · Appreciation badge",
-  //   image: "/certificates/gssoc-badge.jpg",
-  //   alt: "GirlScript Summer of Code 2025 Tech Contributors badge",
-  // },
-  {
+ {
     issuer: "NPTEL · IIT Madras",
     title: "The Joy of Computing Using Python",
     result: "NPTEL certification · 88%",
     image: "/certificates/nptel-python.png",
     alt: "NPTEL The Joy of Computing Using Python certificate",
   },
-  // {
-  //   issuer: "BuildX India",
-  //   title: "Top 20 Hackathon Team",
-  //   result: "Top 20 · Team Lead · 4-member team",
-  //   image: "/certificates/buildx-top20.png",
-  //   alt: "BuildX India Top 20 Hackathon certificate",
-  // },
+
+   {
+    issuer:"Girls Script Foundation ",
+    icon: BadgeCheck,
+    label: "Contributor",
+    title: "GSSoC 2025",
+     result: "Certificate of Participation · Top 5% ",
+    meta: "Open Source Contributor · Aug–Oct 2025",
+    text: "Contributed to 10+ real-world repositories with 12 merged pull requests.",
+    image: "/public/certificates/gssoc_certificate.png",
+    link: "https://drive.google.com/file/d/1gJ3u_qPKG16TRVsyrRG-yyOx_5ogQEHu/view?usp=sharing ",
+  },
+    {
+       issuer:"UD-Tech India",
+    icon: Trophy,
+    label: "Top 20",
+    title: "BuildX Hackathon",
+    meta: "Team Lead · 4-member team",
+    text: "Led a four-member team to a Top 20 position in the BuildX India Hackathon.",
+    image: "/certificates/buildx-top20.png",
+     link: "https://drive.google.com/file/d/1VveSqFgIJcjHVAf3pyLNitc9urhuVHc-/view?usp=sharing",
+  },
+
   {
     issuer: "Udemy",
     title: "The Complete Full-Stack Web Development Bootcamp",

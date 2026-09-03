@@ -39,9 +39,9 @@ export default function HeroSection() {
             <a className="btn-primary" href="#projects">
               View my work <ArrowDown size={17} />
             </a>
-            <a className="btn-secondary" href="mailto:zaidxcodes@gmail.com">
+            {/* <a className="btn-secondary" href="mailto:zaidxcodes@gmail.com">
               Contact me <Mail size={16} />
-            </a>
+            </a> */}
             <a
               className="btn-secondary"
               href="/Mohammad_Zaid_Resume.pdf"
@@ -80,23 +80,13 @@ export default function HeroSection() {
         <div className="relative reveal lg:justify-self-end">
           <div className="absolute -inset-5 rounded-[3rem] bg-red-500/10 blur-3xl" />
           <div className="glass relative overflow-hidden rounded-[2rem] p-3 shadow-glow">
-            <div className="absolute left-6 top-6 z-10 rounded-full border border-red-500/30 bg-black/70 px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-red-300 backdrop-blur">
-              MERN · DSA
-            </div>
+
             <img
               src="/profile.jpg"
               alt="Mohammad Zaid"
               className="aspect-[4/5] w-full max-w-[500px] rounded-[1.5rem] object-cover object-center"
             />
-            <div className="absolute bottom-7 left-7 right-7 flex items-end justify-between rounded-2xl border border-white/10 bg-black/65 p-4 backdrop-blur-xl">
-              <div>
-                <p className="font-bold">Mohammad Zaid</p>
-                <p className="text-xs text-zinc-400">B.Tech CSE · CGPA 9.3</p>
-              </div>
-              <span className="rounded-full bg-red-500 p-2">
-                <Zap size={15} />
-              </span>
-            </div>
+
           </div>
         </div>
       </div>

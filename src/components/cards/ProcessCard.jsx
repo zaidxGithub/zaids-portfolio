@@ -7,7 +7,7 @@ export default function ProcessCard({ number, title, description, index }) {
       <p className="mt-4 leading-7 text-zinc-400">{description}</p>
       <div className="mt-7 h-px bg-gradient-to-r from-red-500/60 to-transparent" />
       <p className="mt-4 text-xs font-bold uppercase tracking-[.18em] text-zinc-500">
-        Step {index + 1} · Ship with intent
+        Step {index + 1} 
       </p>
     </article>
   );

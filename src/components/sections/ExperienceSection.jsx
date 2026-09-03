@@ -23,11 +23,11 @@
                   Professional Experience
                 </h3>
                 <p className="mt-3 max-w-2xl leading-7 text-zinc-400">
-                  COMING SOON...
+                  {/* COMING SOON... */}
                 </p>
               </div>
             </div>
-            <span className="tag">Add later</span>
+            <span className="tag">Coming Soon...</span>
           </div>
         </div>
       </section>

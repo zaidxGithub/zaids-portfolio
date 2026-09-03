@@ -4,7 +4,7 @@ import StatCard from "../cards/StatCard";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="container-x py-28">
+    <section id="about" className="  container-x py-28">
       <SectionHeader
         eyebrow="About me"
         title="Engineer. Builder."

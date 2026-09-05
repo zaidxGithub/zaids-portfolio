@@ -50,29 +50,6 @@ export default function ContactSection() {
               <MessageCircle size={17} /> WhatsApp
             </a>
           </div>
-          <div className="mt-10 grid gap-3 sm:grid-cols-3">
-            <div className="glass rounded-2xl p-5">
-              <Mail className="text-red-500" size={20} />
-              <p className="mt-3 text-xs uppercase tracking-widest text-zinc-500">
-                Email
-              </p>
-              <p className="mt-1 font-semibold">zaidxcodes@gmail.com</p>
-            </div>
-            <div className="glass rounded-2xl p-5">
-              <MapPin className="text-red-500" size={20} />
-              <p className="mt-3 text-xs uppercase tracking-widest text-zinc-500">
-                Location
-              </p>
-              <p className="mt-1 font-semibold">Lucknow, India</p>
-            </div>
-            <div className="glass rounded-2xl p-5">
-              <Rocket className="text-red-500" size={20} />
-              <p className="mt-3 text-xs uppercase tracking-widest text-zinc-500">
-                Open to
-              </p>
-              <p className="mt-1 font-semibold">Internships + Full-time</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>

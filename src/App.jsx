@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Loader from "./components/layout/Loader";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
@@ -14,65 +14,85 @@ import ExperienceSection from "./components/sections/ExperienceSection";
 import ContributionsSection from "./components/sections/ContributionsSection";
 import WinsSection from "./components/sections/WinsSection";
 import ContactSection from "./components/sections/ContactSection";
-import QuickAnswerSection from "./components/sections/QuickAnswersSection"
+import CodingSection from "./components/sections/CodingSection";
 
 export default function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem("zaid-theme") || "dark");
   const [loading, setLoading] = useState(true);
+  const [loaderHidden, setLoaderHidden] = useState(false);
+  const themeTransitionTimer = useRef(null);
+  const themeTransitionEndTimer = useRef(null);
+  const themeTransitionLocked = useRef(false);
 
+  // Persist the selected theme and update the document root without remounting the application.
   useEffect(() => {
+    const root = document.documentElement;
     localStorage.setItem("zaid-theme", theme);
-    document.documentElement.classList.toggle("light-mode", theme === "light");
+    root.classList.toggle("light-mode", theme === "light");
   }, [theme]);
 
+  // Clear pending theme timers and restore the document when the application unmounts.
+  useEffect(() => () => {
+    clearTimeout(themeTransitionTimer.current);
+    clearTimeout(themeTransitionEndTimer.current);
+    document.documentElement.classList.remove("theme-transition-active");
+  }, []);
+
+  // Cover the page, change the theme once, then remove the overlay.
+  const toggleTheme = () => {
+    if (themeTransitionLocked.current) return;
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setTheme((currentTheme) => (currentTheme === "dark" ? "light" : "dark"));
+      return;
+    }
+
+    themeTransitionLocked.current = true;
+    document.documentElement.classList.add("theme-transition-active");
+    themeTransitionTimer.current = setTimeout(() => {
+      setTheme((currentTheme) => (currentTheme === "dark" ? "light" : "dark"));
+      themeTransitionTimer.current = null;
+      themeTransitionEndTimer.current = setTimeout(() => {
+        document.documentElement.classList.remove("theme-transition-active");
+        themeTransitionLocked.current = false;
+        themeTransitionEndTimer.current = null;
+      }, 180);
+    }, 120);
+  };
+
+  // Keep the loader lifecycle independent from theme changes and page content.
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1250);
-    return () => clearTimeout(timer);
+    const hideTimer = setTimeout(() => setLoaderHidden(true), 2700);
+    const removeTimer = setTimeout(() => setLoading(false), 3250);
+
+    return () => {
+      clearTimeout(hideTimer);
+      clearTimeout(removeTimer);
+    };
   }, []);
 
   return <>
-    {loading && <Loader />}
-    <div className={`noise relative overflow-hidden ${theme === "light" ? "light-mode" : ""}`}>
+    {loading && <Loader isHidden={loaderHidden} />}
+    <div className={`noise relative overflow-hidden ${loading ? "page-loading" : ""}`}>
+      <div className="theme-transition-overlay" aria-hidden="true" />
       <div className="grid-bg pointer-events-none absolute inset-x-0 top-0 h-[800px]" />
-      <Navbar theme={theme} setTheme={setTheme} />
+      <Navbar theme={theme} onToggleTheme={toggleTheme} />
       <main>
-        {/* //1 */}
+        {/* Primary page content. */}
         <HeroSection />
-        {/* //2 */}
         <MarqueeSection />
-        {/* //3 */}
         <AboutSection />
-        {/* //4 */}
-           <SkillsSection/>
-            {/* //5 */}
-             <ProcessSection />
+        <SkillsSection />
+        <ProcessSection />
 
-
-             <ExperienceSection/>
-                {/* //6 */}
-              <ProjectsSection />
-
-             {/* //8 */}
-           <ContributionsSection/>
-           {/* //9 */}
-           <WinsSection/>
-           {/* //10 */}
-
-        <EducationSection/>
-        {/* //11 */}
-
-         <HelpSection />
-         {/* //12 */}
-
-
-
-           {/* <QuickAnswerSection/> */}
-           {/* //13 */}
-           <ContactSection/>
-
-
-
-
+        <ExperienceSection />
+        <ProjectsSection />
+        <ContributionsSection />
+        <WinsSection />
+        <EducationSection />
+        <CodingSection />
+        <HelpSection />
+        <ContactSection />
       </main>
       <Footer />
     </div>

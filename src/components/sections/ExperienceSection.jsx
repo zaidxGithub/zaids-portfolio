@@ -1,5 +1,6 @@
   import { BriefcaseBusiness } from "lucide-react";
   import SectionHeader from "../ui/SectionHeader";
+    import Reveal from "../ui/Reveal";
 
   export default function ExperienceSection() {
     return (
@@ -9,7 +10,8 @@
           title="The next chapter is"
           accent="open."
         />
-        <div className="glass rounded-[2rem] p-8 sm:p-12">
+        <Reveal>
+          <div className="glass rounded-[2rem] p-8 sm:p-12">
           <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
             <div className="flex gap-4">
               <div className="rounded-2xl bg-red-500/10 p-3 text-red-400">
@@ -23,13 +25,14 @@
                   Professional Experience
                 </h3>
                 <p className="mt-3 max-w-2xl leading-7 text-zinc-400">
-                  {/* COMING SOON... */}
+                  {}
                 </p>
               </div>
             </div>
             <span className="tag">Coming Soon...</span>
           </div>
-        </div>
+          </div>
+        </Reveal>
       </section>
     );
   }

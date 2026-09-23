@@ -5,11 +5,13 @@ import {
   Rocket,
 } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Reveal from "../ui/Reveal";
 
 export default function ContactSection() {
   return (
     <section id="contact" className="container-x pb-28 pt-20">
-      <div className="relative overflow-hidden rounded-[2.5rem] border border-red-500/20 bg-gradient-to-br from-red-500/15 via-white/[0.03] to-transparent p-8 shadow-glow sm:p-12">
+      <Reveal>
+        <div className="relative overflow-hidden rounded-[2.5rem] border border-red-500/20 bg-gradient-to-br from-red-500/15 via-white/[0.03] to-transparent p-8 shadow-glow sm:p-12">
         <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-red-500/20 blur-3xl" />
         <div className="relative">
           <span className="eyebrow border-red-500/20">Quick connect</span>
@@ -21,8 +23,13 @@ export default function ContactSection() {
             reach me is email or LinkedIn.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a className="btn-primary" href="mailto:zaidxcodes@gmail.com">
-              <Mail size={17} /> zaidxcodes@gmail.com
+            <a
+              className="btn-primary"
+              href="mailto:zaidxcodes@gmail.com"
+              aria-label="Send an email"
+              title="Send an email"
+            >
+              <Mail size={17} />
             </a>
             <a
               className="btn-secondary"
@@ -40,18 +47,10 @@ export default function ContactSection() {
             >
               <FaGithub size={17} /> GitHub
             </a>
-            <a
-              className="btn-secondary whatsapp-btn"
-              href="https://wa.me/"
-              target="_blank"
-              rel="noreferrer"
-              title="Add your WhatsApp number in src/components/sections/ContactSection.jsx"
-            >
-              <MessageCircle size={17} /> WhatsApp
-            </a>
           </div>
         </div>
-      </div>
+        </div>
+      </Reveal>
     </section>
   );
 }

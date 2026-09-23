@@ -1,6 +1,7 @@
 import SectionHeader from "../ui/SectionHeader";
 import ProjectCard from "../cards/ProjectCard";
 import { projects } from "../../data/portfolioData";
+import Reveal from "../ui/Reveal";
 
 export default function ProjectsSection() {
   return (
@@ -11,7 +12,7 @@ export default function ProjectsSection() {
   <div className="grid-bg pointer-events-none absolute inset-0" />
 
   <div className="relative">
-    {/* section content */}
+    {}
 
     <section id="projects" className="container-x py-28">
       <SectionHeader
@@ -22,7 +23,9 @@ export default function ProjectsSection() {
       />
       <div className="space-y-8">
         {projects.map((project, index) => (
-          <ProjectCard key={project.title} project={project} index={index} />
+          <Reveal key={project.title} delay={index * 70}>
+            <ProjectCard project={project} index={index} />
+          </Reveal>
         ))}
       </div>
     </section>

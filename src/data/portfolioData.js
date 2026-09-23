@@ -10,6 +10,8 @@ export const navItems = [
   ["Contact", "contact"],
 ];
 
+export const profileImage = "/Images/profile.jpg";
+
 export const skills = {
   Languages: ["C++", "JavaScript", "Python", "SQL"],
   Frameworks: ["React.js", "Node.js", "Express.js","Tailwind CSS"],
@@ -45,13 +47,7 @@ export const projects = [
 
 export const wins = [
 
-  // {
-  //   icon: Award,
-  //   label: "1st Position",
-  //   title: "Quiz Competition",
-  //   meta: "Integral University · March 2024",
-  //   text: "Secured first position in a university quiz competition.",
-  // },
+
   {
     icon: BadgeCheck,
     label: "Contributor",
@@ -97,6 +93,7 @@ export const certifications = [
     icon: Trophy,
     label: "Top 20",
     title: "BuildX Hackathon",
+    result:"Top 20",
     meta: "Team Lead · 4-member team",
     text: "Led a four-member team to a Top 20 position in the BuildX India Hackathon.",
     image: "/certificates/buildx-top20.png",
@@ -109,6 +106,44 @@ export const certifications = [
     result: "Full-stack web development",
     image: "/certificates/udemy-fullstack.png",
     alt: "Udemy Complete Full-Stack Web Development Bootcamp certificate",
+  },
+];
+
+export const genAiGallery = [
+  {
+    src: "/Images/genimg1.jpg",
+    alt: "Gen AI Study Jams memory from 2023 or 2024",
+    caption: "Gen AI Study Jams memory",
+  },
+  {
+    src: "/Images/genimg2.jpg",
+    alt: "Gen AI Study Jams memory from 2023 or 2024",
+    caption: "Gen AI Study Jams memory",
+  },
+  {
+    src: "/Images/genimg3.jpg",
+    alt: "Gen AI Study Jams memory from 2023 or 2024",
+    caption: "Gen AI Study Jams memory",
+  },
+  {
+    src: "/Images/genimg4.jpg",
+    alt: "Gen AI Study Jams memory from 2023 or 2024",
+    caption: "Gen AI Study Jams memory",
+  },
+  {
+    src: "/Images/genimg5.jpg",
+    alt: "Gen AI Study Jams memory from 2023 or 2024",
+    caption: "Gen AI Study Jams memory",
+  },
+  {
+    src: "/certificates/genAIGDSC2023.jpg",
+    alt: "Gen AI Study Jams 2023 certificate",
+    caption: "Gen AI Study Jams 2023 certificate",
+  },
+  {
+    src: "/certificates/genAIGDSC2024.png",
+    alt: "Gen AI Study Jams 2024 certificate",
+    caption: "Gen AI Study Jams 2024 certificate",
   },
 ];
 
@@ -146,16 +181,7 @@ export const processCards = [
 export const platformProfiles = [
   ["LeetCode", "ZaidxLeet20", "https://leetcode.com/u/ZaidxLeet20/"],
   ["CodeChef", "zaidxchef20", "#"],
-  ["HackerRank", "ZaidxRank20", "#"],
-];
-
-export const quickAnswers = [
-  ["What are you looking for?", "Both internships and full-time opportunities."],
-  ["What is your main stack?", "MERN: React, Node.js, Express.js and MongoDB."],
-  ["Do you contribute to open source?", "Yes. GSSoC 2025: 10+ repositories and 12 merged PRs."],
-  ["What do you use for DSA?", "Primarily C++, with 150+ problems solved on LeetCode."],
-  ["Where are you based?", "Lucknow, India."],
-  ["When do you graduate?", "2027, B.Tech CSE at Integral University."],
+  ["HackerRank", "ZaidxRank20", "https://www.hackerrank.com/profile/ZaidxRank20"],
 ];
 
 export const marqueeItems = ["React", "Node.js", "Express", "MongoDB", "JavaScript", "C++", "Python", "SQL", "Git", "Docker"];

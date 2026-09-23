@@ -16,7 +16,7 @@ export const skills = {
   Languages: ["C++", "JavaScript", "Python", "SQL"],
   Frameworks: ["React.js", "Node.js", "Express.js","Tailwind CSS"],
   Databases: ["MongoDB", "MySQL"],
-  Tools: ["Git", "GitHub", "VS Code", "Postman", "Firebase", "Docker", "Cloudinary"],
+  Tools: ["Git", "GitHub", "VS Code", "Postman", "Firebase", "Docker", "Cloudinary", "Vercel", "Render"],
 
 };
 

@@ -14,10 +14,18 @@ export const profileImage = "/Images/profile.jpg";
 
 export const skills = {
   Languages: ["C++", "JavaScript", "Python", "SQL"],
-  Frameworks: ["React.js", "Node.js", "Express.js","Tailwind CSS"],
+  Frameworks: ["React.js", "Node.js", "Express.js", "Tailwind CSS"],
   Databases: ["MongoDB", "MySQL"],
-  Tools: ["Git", "GitHub", "VS Code", "Postman", "Firebase", "Cloudinary", "Vercel", "Render"],
-
+  Tools: [
+    "Git",
+    "GitHub",
+    "VS Code",
+    "Postman",
+    "Firebase",
+    "Cloudinary",
+    "Vercel",
+    "Render",
+  ],
 };
 
 export const projects = [
@@ -27,10 +35,25 @@ export const projects = [
     subtitle: "Full-stack productivity & security platform",
     description:
       "A full-stack platform combining secure password management, note-taking and cloud file storage, with Firebase authentication and Gemini-powered productivity features.",
-    stack: ["React.js", "Node.js", "Express.js", "MongoDB", "Firebase", "Gemini API"],
+    stack: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Firebase",
+      "Gemini API",
+    ],
     live: "https://smartvault-omega.vercel.app/",
     github: "https://github.com/zaidxGithub/SmartVault",
-    screenshots: ["/project/smartvault-dashboard.png", "/project/smartvault-login.png"],
+    screenshots: [
+      "/project/smartvault-dashboard.png",
+      "/project/smartvault-login.png",
+    ],
+    stats: [
+      ["Stack", "MERN + Firebase"],
+      ["Focus", "Productivity platform"],
+      ["Feature", "AI-powered tools"],
+    ],
   },
   {
     number: "02",
@@ -42,12 +65,15 @@ export const projects = [
     live: "https://easy-page-blue.vercel.app/",
     github: "https://github.com/zaidxGithub/EasyPage",
     screenshots: ["/project/easypage.png"],
+    stats: [
+      ["Stack", "React + Tailwind"],
+      ["Focus", "Assignment generator"],
+      ["Feature", "One-click PDF"],
+    ],
   },
 ];
 
 export const wins = [
-
-
   {
     icon: BadgeCheck,
     label: "Contributor",
@@ -57,19 +83,19 @@ export const wins = [
     image: "/public/certificates/gssoc_certificate.png",
     link: "https://drive.google.com/file/d/1gJ3u_qPKG16TRVsyrRG-yyOx_5ogQEHu/view?usp=sharing ",
   },
-    {
+  {
     icon: Trophy,
     label: "Top 20",
     title: "BuildX Hackathon",
     meta: "Team Lead · 4-member team",
     text: "Led a four-member team to a Top 20 position in the BuildX India Hackathon.",
     image: "/certificates/buildx-top20.png",
-     link: "https://drive.google.com/file/d/1VveSqFgIJcjHVAf3pyLNitc9urhuVHc-/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1VveSqFgIJcjHVAf3pyLNitc9urhuVHc-/view?usp=sharing",
   },
 ];
 
 export const certifications = [
- {
+  {
     issuer: "NPTEL · IIT Madras",
     title: "The Joy of Computing Using Python",
     result: "NPTEL certification · 88%",
@@ -77,27 +103,27 @@ export const certifications = [
     alt: "NPTEL The Joy of Computing Using Python certificate",
   },
 
-   {
-    issuer:"Girls Script Foundation ",
+  {
+    issuer: "Girls Script Foundation ",
     icon: BadgeCheck,
     label: "Contributor",
     title: "GSSoC 2025",
-     result: "Certificate of Participation · Top 5% ",
+    result: "Certificate of Participation · Top 5% ",
     meta: "Open Source Contributor · Aug–Oct 2025",
     text: "Contributed to 10+ real-world repositories with 12 merged pull requests.",
     image: "/public/certificates/gssoc_certificate.png",
     link: "https://drive.google.com/file/d/1gJ3u_qPKG16TRVsyrRG-yyOx_5ogQEHu/view?usp=sharing ",
   },
-    {
-       issuer:"UD-Tech India",
+  {
+    issuer: "UD-Tech India",
     icon: Trophy,
     label: "Top 20",
     title: "BuildX Hackathon",
-    result:"Top 20",
+    result: "Top 20",
     meta: "Team Lead · 4-member team",
     text: "Led a four-member team to a Top 20 position in the BuildX India Hackathon.",
     image: "/certificates/buildx-top20.png",
-     link: "https://drive.google.com/file/d/1VveSqFgIJcjHVAf3pyLNitc9urhuVHc-/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1VveSqFgIJcjHVAf3pyLNitc9urhuVHc-/view?usp=sharing",
   },
 
   {
@@ -165,23 +191,70 @@ export const contributions = [
 ];
 
 export const helpCards = [
-  ["01", "Full-stack web apps", "React interfaces, Node/Express APIs, MongoDB data flows and responsive product experiences."],
-  ["02", "Frontend engineering", "Reusable React components, responsive layouts, form validation and polished UI systems."],
-  ["03", "Problem solving", "C++ and DSA practice with 150+ problems solved across core algorithmic patterns."],
-  ["04", "Developer collaboration", "Git/GitHub workflows, pull requests, code reviews and open-source contribution."],
+  [
+    "01",
+    "Full-stack web apps",
+    "React interfaces, Node/Express APIs, MongoDB data flows and responsive product experiences.",
+  ],
+  [
+    "02",
+    "Frontend engineering",
+    "Reusable React components, responsive layouts, form validation and polished UI systems.",
+  ],
+  [
+    "03",
+    "Problem solving",
+    "C++ and DSA practice with 150+ problems solved across core algorithmic patterns.",
+  ],
+  [
+    "04",
+    "Developer collaboration",
+    "Git/GitHub workflows, pull requests, code reviews and open-source contribution.",
+  ],
 ];
 
 export const processCards = [
-  ["01", "Research", "Understand the problem, users, requirements and technical constraints before writing code."],
-  ["02", "Design", "Shape clean architecture, intuitive interfaces and reusable components around the real user flow."],
-  ["03", "Develop", "Build responsive React interfaces, reliable APIs, database flows and integrations with clean code."],
-  ["04", "Deploy", "Test, refine and ship the application with production-minded deployment and maintainability."],
+  [
+    "01",
+    "Research",
+    "Understand the problem, users, requirements and technical constraints before writing code.",
+  ],
+  [
+    "02",
+    "Design",
+    "Shape clean architecture, intuitive interfaces and reusable components around the real user flow.",
+  ],
+  [
+    "03",
+    "Develop",
+    "Build responsive React interfaces, reliable APIs, database flows and integrations with clean code.",
+  ],
+  [
+    "04",
+    "Deploy",
+    "Test, refine and ship the application with production-minded deployment and maintainability.",
+  ],
 ];
 
 export const platformProfiles = [
   ["LeetCode", "ZaidxLeet20", "https://leetcode.com/u/ZaidxLeet20/"],
   ["CodeChef", "zaidxchef20", "#"],
-  ["HackerRank", "ZaidxRank20", "https://www.hackerrank.com/profile/ZaidxRank20"],
+  [
+    "HackerRank",
+    "ZaidxRank20",
+    "https://www.hackerrank.com/profile/ZaidxRank20",
+  ],
 ];
 
-export const marqueeItems = ["React", "Node.js", "Express", "MongoDB", "JavaScript", "C++", "Python", "SQL", "Git", "Docker"];
+export const marqueeItems = [
+  "React",
+  "Node.js",
+  "Express",
+  "MongoDB",
+  "JavaScript",
+  "C++",
+  "Python",
+  "SQL",
+  "Git",
+  "Docker",
+];

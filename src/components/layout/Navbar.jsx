@@ -2,9 +2,8 @@ import { Menu, Moon, Sun, X } from "lucide-react";
 import { useState } from "react";
 import { navItems } from "../../data/portfolioData";
 
-export default function Navbar({ theme, setTheme }) {
+export default function Navbar({ theme, onToggleTheme }) {
   const [open, setOpen] = useState(false);
-  const toggleTheme = () => setTheme(theme === "dark" ? "light" : "dark");
 
   return (
     <header className="fixed left-1/2 top-4 z-50 w-[min(1120px,92%)] -translate-x-1/2">
@@ -27,7 +26,7 @@ export default function Navbar({ theme, setTheme }) {
           <div className="flex items-center gap-2">
             <button
               className="theme-toggle"
-              onClick={toggleTheme}
+              onClick={onToggleTheme}
               aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
               title={`Switch to ${theme === "dark" ? "light" : "dark"} theme`}
             >

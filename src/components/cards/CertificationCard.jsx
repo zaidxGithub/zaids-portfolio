@@ -3,7 +3,7 @@ import { ExternalLink } from "lucide-react";
 export default function CertificationCard({ certification }) {
   const c=certification;
   return (
-     <article className="glass glass-hover overflow-hidden rounded-[2rem]">
+    <article className="glass glass-hover flex h-full min-w-0 w-full flex-col overflow-hidden rounded-[2rem]">
       <div className="p-2">
         <div className="certificate-image-wrap aspect-[16/8] w-full overflow-hidden rounded-[1.5rem]">
           <img
@@ -14,7 +14,7 @@ export default function CertificationCard({ certification }) {
         </div>
       </div>
 
-      <div className="p-6">
+      <div className="flex flex-1 flex-col p-6">
         <p className="text-xs font-bold uppercase tracking-wider text-red-400">
           {c.issuer}
         </p>
@@ -33,7 +33,7 @@ export default function CertificationCard({ certification }) {
           href={c.link || c.image}
           target="_blank"
           rel="noreferrer"
-          className="mt-5 inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-xs font-bold text-zinc-300 transition hover:border-red-500/40"
+          className="mt-auto inline-flex w-fit items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-xs font-bold text-zinc-300 transition hover:border-red-500/40"
         >
           View certificate
           <ExternalLink size={13} />

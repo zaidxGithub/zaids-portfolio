@@ -1,6 +1,6 @@
 export default function WinCard({ win }) {
   return (
-    <article className="glass glass-hover overflow-hidden rounded-[2rem] p-6">
+    <article className="glass glass-hover flex h-full flex-col overflow-hidden rounded-[2rem] p-6">
       {win.image && (
         <div className="mt-1 overflow-hidden rounded-2xl border border-white/10 bg-black/20">
           <div className="aspect-[16/10] w-full">
@@ -21,7 +21,7 @@ export default function WinCard({ win }) {
         {win.title}
       </h3>
 
-      <p className="mt-2 text-sm text-zinc-400">
+      <p className="mt-2 flex-1 text-sm text-zinc-400">
         {win.description}
       </p>
 

@@ -111,7 +111,7 @@ export const certifications = [
     result: "Certificate of Participation · Top 5% ",
     meta: "Open Source Contributor · Aug–Oct 2025",
     text: "Contributed to 10+ real-world repositories with 12 merged pull requests.",
-    image: "/public/certificates/gssoc_certificate.png",
+    image: "/certificates/gssoc_certificate.png",
     link: "https://drive.google.com/file/d/1gJ3u_qPKG16TRVsyrRG-yyOx_5ogQEHu/view?usp=sharing ",
   },
   {

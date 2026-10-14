@@ -52,8 +52,9 @@ export default function HeroSection() {
             </a>
             <a
               className="btn-secondary"
-              href="/Mohammad_Zaid_Resume.pdf"
-              download
+              href="https://drive.google.com/file/d/1xfawikPJ2jXRdQx4XBYBYyCYRrZFP3QP/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Resume <Download size={16} />
             </a>
